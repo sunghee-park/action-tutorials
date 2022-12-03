@@ -27,6 +27,7 @@ public class GlobalExceptionAdvice {
         return response;
     }
 
+
     @ExceptionHandler
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ErrorResponse handleConstraintViolationException(
